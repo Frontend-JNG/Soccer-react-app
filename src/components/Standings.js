@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import { Circles } from "react-loader-spinner";
+import { ThreeDots } from "react-loader-spinner";
 import axios from "axios";
 
 const Standings = () => {
@@ -75,7 +75,7 @@ const Standings = () => {
       </div>
       <div className="ranking-div">
         {loading ? (
-          <Circles />
+          <ThreeDots color="red" height={80} width={80} />
         ) : (
           data?.map((data, index) => (
             <div key={index} className="ranking-div-inner">

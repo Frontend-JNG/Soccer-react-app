@@ -7,6 +7,24 @@
   background-image: url("https://images.pexels.com/photos/47730/the-ball-stadion-football-the-pitch-47730.jpeg?auto=compress&cs=tinysrgb&w=1600");
   
 }
+div{
+  margin: 0;
+  padding: 0;
+}
+h1{
+  text-align: center;
+  margin: auto;
+  padding: 3px;
+  
+}
+.text-1{
+  color: #4df74d;
+  justify-content: space-between;
+  text-align:left;
+  justify-self: left;
+  
+}
+
 
 .navbar {
   width: 100%;
@@ -22,6 +40,7 @@
 
   
 }
+
 .navtext{
  
  margin-left: 10px;
@@ -42,14 +61,22 @@
   margin-left: 10%;
   text-decoration: none;
   font-weight:bolder;
-  color:solid white;
+  
 }
 
-.links{
+.links {
   text-decoration: none;
+  color: #ffffff;
+  margin: 0;
+  padding-top: 20px;
+  padding-right: 60px;
+  padding-bottom: 10px;
+  padding-left: -5px;
+  
 }
 
-@media screen and (min-width: 375px) and (max-width:450px){
+
+@media screen and (max-width: 375px) and (min-width:450px){
   .navtext{
     background-color: light green;
     text-align: center;
@@ -64,22 +91,36 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 400px;
+  width: 200px;
   /* margin-left: 32rem; */
   /* background-color: #cccccc; */
-  background-image: linear-gradient(to right, #64B2CC 30%, #657980);
+  background-image: linear-gradient(to right, #bf470f 30%, #657980);
   }
- .links {
-  display: flex;
+ 
+text-1 {
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  float: left;
+ 
+}
+.nav-links {
+  text-decoration: none;
+  color: #f00a0a;
+  font-size: 10px;
+  margin: auto 0 0 30px;
+  padding-right: 10px;
+  padding-left: -10px;
   text-align: center;
-  align-items:center;
-  justify-content:space-around;
-  width: 80%;
-  margin-left: 5%;
- text-decoration: none;
-  font-size: 30px;
+  width: 100%;
   
-} 
+  
+}
+.navbar{
+  margin: 0;
+  padding: 20px;
+}
+
 
 }
 .content-container {
@@ -109,7 +150,7 @@
   align-items: center;
   justify-content: center;
   background-color: #000000;
-  color: #ffffff;
+ 
   text-align: center;
   border-right: 5px solid #cccccc;
 
@@ -175,7 +216,7 @@
   justify-content: center;
   flex-direction: column;
   margin: auto;
-  width: 25.5%;
+  width: 30%;
   border: solid black;
   background-image: linear-gradient(to right, #64B2CC 30%, #657980);
  
@@ -185,15 +226,15 @@ select {
   padding: 10px;
   font-size: 19px;
 }
- @media (min-width: 1025px) and (max-width: 1300px){
+ @media (min-width: 481px) and (max-width: 2500px){
 .ranking-div {
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 35vh;
-  margin:auto;
+  width: 30%;
+  
   background-color: #cccccc;
 }
 .nav-links {
@@ -206,25 +247,73 @@ select {
   text-decoration: none;
   color: #ffffff; 
 }
+.text-2{
+  font-size: 25px;
+  color: #ffffff;
+
 }
-@media screen and (min-width: 320px) and (max-width: 480px){
+}
+@media screen and (min-width: 200px) and (max-width: 480px){
 .ranking-div {
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 300px;
-  margin: 5px;
+  width: 70%;
+  margin: auto 22px;
+  
   background-color: #cccccc;
 }
+#form{
+  color: #0d11e8;
+}
+fieldset {
+  width:0px;
+  height: 0px;
+  border: none;
+}
+.formContainer{
+  width: 0px;
+  height: 0px;
+}
+/* .fullName {
+width: 100px;
+height: 100px;
+color: #f00a0a;
+} */
+.text-2{
+  font-size: 18px;
+  color: #ffffff;
+
+}
+.text-1 {
+  font-size: 10px;
+  width: 100%;
+  margin: 5px;
+}
+.links{
+  margin-right: 5px;
+  padding-right: 5px;
+  font-size: 10px;
+}
+}
+.form{
+  display: inline-block;
+  margin-top: 200px;
+  margin-bottom: 360px;
+  height: 300px;
+  width: 200px;
 }
 
 
 .ranking-div-inner {
   margin: 20px 0;
+  text-align: center;
+  font-size: 12px;
   
 }
+
 
 .logo-small {
   width: 25px;
@@ -251,12 +340,10 @@ select {
 }
 .footers{
  text-align: center;
- font-size: 30px;
+ font-size: 20px;
  padding: 70px;
  background-color: rgb(56, 149, 37);
  /* background-image: url("https://elimufeynman.s3.amazonaws.com/media/resources/sunny_day.jpg"); */
 }
-.ABC{
-  background-color: aqua;
-}
+
 

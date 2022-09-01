@@ -4,12 +4,14 @@ import { Link } from "react-router-dom";
 import ContactForm from "../contactForm";
 
 const Navbar = () => {
-  return (
+  return ( 
+    
     <nav className="navbar">
-      <div className="navtext">
-        <h1>Football App ⚽</h1>
-      </div>
+     <div>
+        <h1 className="text-1">Football App⚽</h1>
+    </div>
       <div className="nav-links">
+        
         <li>
           <Link className="links" to="/">
             Home
@@ -22,7 +24,7 @@ const Navbar = () => {
         </li>
         <li>
           <Link className="links" to="/contactForm">
-            Subscription Option
+            Subscription
           </Link>
         </li>
 

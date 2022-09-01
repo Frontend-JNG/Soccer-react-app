@@ -33,9 +33,9 @@ h2{
   
 }
 #form{
-  width: 50em;
-  height: 50em;
-  background-image: linear-gradient(to right, #64B2CC 30%, #657980);
+  max-width: 300px;
+  max-height: 400px;
+  
   
   /* margin-bottom: -600px; */
 }
@@ -69,7 +69,7 @@ input{
 }
 #submit{
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 5;
   padding: 12px 0px;
   width: 200px;
   font-weight: bold;
@@ -83,7 +83,7 @@ input{
 #form{
   width: 50em;
   height: 50em;
-  background-image: linear-gradient(to right, #64B2CC 30%, #657980);
+  
 
   
 }

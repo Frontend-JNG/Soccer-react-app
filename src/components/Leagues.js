@@ -5,6 +5,7 @@ import axios from "axios";
 
 const Leagues = () => {
   const [data, setData] = useState([]);
+  const [selectedLeague, onLeagueSelect] = useState();
 
   useEffect(() => {
     axios
@@ -55,8 +56,15 @@ const Leagues = () => {
   return (
     <div className="leagues-container ">
       {data?.map((league) => (
-        <div key={league.id} className="league-div">
-          <img src={league.logos.light} alt="#" onClick={handleClick} />
+        <div key={league.id} 
+          league = {league}
+          onLeagueSelect = {onLeagueSelect}
+          className="league-div"
+         >
+          <img src={league.logos.light} 
+          alt="#" 
+          onClick={handleClick} 
+          />
           <h4>{league.name}</h4>
         </div>
       ))}

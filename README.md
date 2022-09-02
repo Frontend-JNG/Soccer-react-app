@@ -17,6 +17,9 @@
 ## Tech Stacks
 
     • React
+    • React-Router
+    • Bootstrap
+    • Material UI
     • Jest
     • CSS
     • Figma

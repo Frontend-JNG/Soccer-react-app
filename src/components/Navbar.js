@@ -1,7 +1,6 @@
 import React from "react";
 import "../App";
 import { Link } from "react-router-dom";
-import ContactForm from "../contactForm";
 
 const Navbar = () => {
   return ( 
@@ -27,10 +26,6 @@ const Navbar = () => {
             Subscription
           </Link>
         </li>
-
-        {/* <Link to="/">Home</Link>
-          <Link to="/Standings"> Standings</Link>
-          <Link to="/contactForm"> Contact</Link> */}
       </div>
     </nav>
   );

@@ -1,8 +1,7 @@
-import React, { useState } from "react";
-import { Form, Input, TextArea, Button, Select } from "semantic-ui-react";
-// import { api } from "../services/api";
-import axios from "axios";
-import Leagues from "./components/Leagues";
+import React from "react";
+import { Form } from "semantic-ui-react";
+
+
 
 
 const  ContactForm =()=>{
@@ -26,6 +25,7 @@ const  ContactForm =()=>{
 
     const handleChange = ev => {
       setTitle(ev.target.value);
+      
         // if (ev.target.name === 'title') {
         //     setTitle(ev.target.value)
         // } else if (ev.target.name === 'content') {

@@ -16,9 +16,21 @@ import ShareIcon from "@mui/icons-material/Share";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 
+const ExpandMore = styled((props) => {
+  const { expand, ...other } = props;
+  return <IconButton {...other} />;
+})(({ theme, expand }) => ({
+  transform: !expand ? "rotate(0deg)" : "rotate(180deg)",
+  marginLeft: "auto",
+  transition: theme.transitions.create("transform", {
+    duration: theme.transitions.duration.shortest,
+  }),
+}));
+
 export default function TeamCard() {
   const [expanded, setExpanded] = React.useState(false);
   const [data, setData] = useState([]);
+  const [leagueSelect, onLeagueSelect] = useState(null);
 
   useEffect(() => {
     axios
@@ -34,6 +46,10 @@ export default function TeamCard() {
     setExpanded(!expanded);
   };
 
+  const handleClick = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardHeader
@@ -47,13 +63,19 @@ export default function TeamCard() {
             <MoreVertIcon />
           </IconButton>
         }
-        title={league.name}
       />
       <CardMedia
-        component="img"
-        height="194"
-        image={league.logos.light}
-        alt="team logo"
+        {...data?.map((league) => (
+          <div
+            key={league.id}
+            league={league}
+            onLeagueSelect={onLeagueSelect}
+            className="league-div"
+          >
+            <img src={league.logos.light} alt="#" onClick={handleClick} />
+            <h4>{league.name}</h4>
+          </div>
+        ))}
       />
       <CardContent>
         <Typography variant="body2" color="text.secondary">

@@ -28,7 +28,7 @@
 
 ### Link to deployed site
 
-    [Link](https://facebook.github.io/create-react-app/docs/deployment)
+    [Link]()
 
 ### Installation instructions
 
